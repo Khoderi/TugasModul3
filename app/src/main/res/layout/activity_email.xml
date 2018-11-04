@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailActivity">
+
+    <EditText
+        android:id="@+id/editTextTo"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:fontFamily="Android Modul"
+        android:hint="to"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="16dp"
+       />
+
+    <EditText
+        android:id="@+id/editTextSbj"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:fontFamily="Android Modul"
+        android:hint="Subject"
+        android:inputType="textEmailSubject"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="81dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTo" />
+
+    <EditText
+        android:id="@+id/editTextMsg"
+        android:layout_width="293dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="Android Modul"
+        android:hint="Message"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSbj"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="@+id/editTextSbj"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSbj" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Kirim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMag"
+        tools:layout_editor_absoluteX="148dp" />
+
+</android.support.constraint.ConstraintLayout>
